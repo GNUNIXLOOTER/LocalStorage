@@ -10,12 +10,12 @@ localStorage.setItem('nombre', 'Juan');
 sessionStorage.setItem('nombre', 'Pablo');
 
 // Local Storage solo soporta strings, no soporta arrays ni objetos pero puedes almacenarlos convirtiendolos a string..
-
 const producto = {
     nombre: 'Monitor 24"',
     precio: 300
 }
 
+// ESTO JSON.stringify CONVIERTE ESE OBJETO EN UN STRING PARA GUARDARLO EN LOCALSTORAGE
 const productoString = JSON.stringify(producto);
 localStorage.setItem('productoJSON', productoString);
 
